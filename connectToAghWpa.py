@@ -24,18 +24,18 @@ class Form:
         layout = QGridLayout(win)
 
 
-        self.sudoPasswordField = QLineEdit()
+        self.sudoPasswordField = QLineEdit("BNBB..bm")
         self.sudoPasswordField.setObjectName("sudo_password")
         self.sudoPasswordField.setEchoMode(QLineEdit.Password)
         self.sudoPasswordField.setPlaceholderText("linux user password")
         layout.addWidget(self.sudoPasswordField)
 
-        self.wpaUserField = QLineEdit()
+        self.wpaUserField = QLineEdit("mamoni@student.agh.edu.pl")
         self.wpaUserField.setObjectName("wpa_user")
         self.wpaUserField.setPlaceholderText("wpa user")
         layout.addWidget(self.wpaUserField)
 
-        self.wpaPasswordField = QLineEdit()
+        self.wpaPasswordField = QLineEdit("Lufynuh")
         self.wpaPasswordField.setObjectName("wpa_password")
         self.wpaPasswordField.setPlaceholderText("wpa password")
         self.wpaPasswordField.setEchoMode(QLineEdit.Password)
@@ -229,6 +229,4 @@ class NetworkManager:
 
 
 form = Form()
-
-
 
